@@ -1,0 +1,31 @@
+.moy-page {
+    display: flex;
+    width: 1017px;
+    min-height: 100vh;
+    margin: auto;
+    flex-direction: column;
+}
+
+.moy-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0 12px 0;
+    flex-grow: 0;
+}
+
+.moy-main {
+    margin-top: 16px;
+    flex-grow: 1;
+}
+
+.moy-footer {
+    text-align: center;
+    font-size: 12px;
+    flex-grow: 0;
+    padding: 10px;
+}
+
+.transaction-name:before{
+    content: "Payment for";
+    font-weight: lighter;
+}
