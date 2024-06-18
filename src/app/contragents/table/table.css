@@ -1,0 +1,31 @@
+.my-table {
+    @apply w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400;
+}
+
+.my-thead {
+    @apply text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400;
+}
+
+.my-th {
+    @apply px-6 py-3;
+}
+
+.my-row {
+    @apply bg-white border-b dark:bg-gray-800 dark:border-gray-700;
+}
+
+.name {
+    @apply px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white;
+}
+
+.inn {
+    @apply px-6 py-4 font-semibold;
+}
+
+.address {
+    @apply px-6 py-4 font-semibold;
+}
+
+.kpp {
+    @apply px-6 py-4 font-semibold;
+}

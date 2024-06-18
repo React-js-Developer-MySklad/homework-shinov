@@ -24,8 +24,3 @@
     flex-grow: 0;
     padding: 10px;
 }
-
-.transaction-name:before{
-    content: "Payment for";
-    font-weight: lighter;
-}
