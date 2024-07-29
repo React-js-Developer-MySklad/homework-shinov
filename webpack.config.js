@@ -29,7 +29,7 @@ module.exports = {
                 // https://webpack.js.org/loaders/css-loader/
                 // https://webpack.js.org/loaders/postcss-loader/
                 // порядок имеет значение
-                use: [ 'style-loader', 'css-loader', 'postcss-loader' ],
+                use: [ 'style-loader', 'css-loader', 'postcss-loader'],
                 exclude: /\.module\.css$/,
             },
             {
@@ -56,7 +56,8 @@ module.exports = {
             //     }, 'postcss-loader'],
             // },
             {
-                test: /\.html$/i, loader: "html-loader",
+                test: /\.html$/i,
+                loader: "html-loader",
             },
             // Встроенный модуль Asset Modules позволяет работать с статическими файлами без
             // дополнтиельных модулей
