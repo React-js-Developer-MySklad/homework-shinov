@@ -91,6 +91,7 @@ module.exports = {
         //     filename: 'css/[name].css',
         // }),
         new ForkTsCheckerWebpackPlugin({
+            async: false,
             typescript: {
                 configFile: path.resolve(__dirname, 'tsconfig.json')
             }
