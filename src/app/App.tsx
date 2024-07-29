@@ -1,7 +1,7 @@
 import * as css from './app.module.css';
 import logoSvg from '../assets/logo.svg';
 import Table from "./contragents/table/Table";
-import {useState} from "react";
+import React, {useState} from "react";
 import MyModal from "./contragents/modal/MyModal";
 
 
