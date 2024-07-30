@@ -3,7 +3,7 @@ import logoSvg from '../assets/logo.svg';
 import Table from "./contragents/table/Table";
 import React, {useState} from "react";
 import MyModal from "./contragents/modal/MyModal";
-
+import {useApi} from "./context/ApiContext";
 
 export interface Company {
     id: string;
@@ -16,9 +16,9 @@ export interface Company {
 const App: React.FC = () => {
 
     const [openModal, setOpenModal] = useState(false);
-    const [data, setData] = useState<Company[]>([]);
+    const { companies, createCompany } = useApi();
     const addCompany = (record: Company) => {
-        setData(prevData => [...prevData, record]);
+        createCompany(record);
     };
 
     return <div className={css.page}>
@@ -34,7 +34,7 @@ const App: React.FC = () => {
 
         <main className={css.main}>
             <div className="relative overflow-x-auto">
-                <Table  counterparties={data}/>
+                <Table  counterparties={companies}/>
                 <MyModal onCloseModal={() =>setOpenModal(false)}
                          openModal={openModal} onSave={addCompany}/>
             </div>
